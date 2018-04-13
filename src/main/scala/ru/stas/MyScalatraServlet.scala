@@ -9,7 +9,7 @@ class MyScalatraServlet extends ScalatraServlet {
   }
 
   get("/test") {
-    <h1>Hello, world!</h1>
+    views.html.second
   }
 
 }

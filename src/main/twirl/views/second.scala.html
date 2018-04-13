@@ -1,0 +1,16 @@
+@(title: String = "Default string")(sidebar: Html)(content: Html)
+<!DOCTYPE html>
+<html>
+<head>
+  <title>@title</title>
+</head>
+<body>
+<section class="sidebar">@sidebar</section>
+<section class="content">@content</section>
+</body>
+</html>
+
+@sidebar = {
+<h1>Sidebar default value</h1>
+}
+
