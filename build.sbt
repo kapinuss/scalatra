@@ -1,15 +1,12 @@
-val ScalatraVersion = "2.6.3"
-
-organization := "kapinuss"
-
 name := "scalatra"
-
+organization := "ru.kapinus"
 version := "0.1.0-SNAPSHOT"
-
-scalaVersion := "2.12.4"
+scalaVersion := "2.12.8"
 
 resolvers += Classpaths.typesafeReleases
 resolvers += "Sonatype Nexus Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+
+val ScalatraVersion = "2.6.3"
 
 libraryDependencies ++= Seq(
   "org.scalatra" %% "scalatra" % ScalatraVersion,
@@ -19,5 +16,4 @@ libraryDependencies ++= Seq(
   "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided"
 )
 
-enablePlugins(SbtTwirl)
-enablePlugins(ScalatraPlugin)
+enablePlugins(SbtTwirl, ScalatraPlugin)
