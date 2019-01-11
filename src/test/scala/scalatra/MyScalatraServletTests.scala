@@ -1,4 +1,4 @@
-package ru.stas
+package scalatra
 
 import org.scalatra.test.scalatest._
 
