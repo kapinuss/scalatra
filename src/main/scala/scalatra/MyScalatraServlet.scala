@@ -12,4 +12,16 @@ class MyScalatraServlet extends ScalatraServlet {
     views.html.second
   }
 
+  get("/chapter/:number") {
+    views.html.chapter(params("number").toInt)
+  }
+
+  get("/article/:number") {
+    views.html.article(params("number").toInt)
+  }
+
+  get("/new") {
+    views.html.delete()
+  }
+
 }
